@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="topbar" role="banner">
+      <div class="logo">
+        <img
+          src="assets/imgs/logo.png"
+          alt="Farmacias Benavides"
+          class="logo-img"
+        />
+      </div>
+    </header>
+
+    <div class="background"></div>
+    <div class="veil"></div>
+
+    <main class="wrap" role="main">
+      <section class="modal" aria-labelledby="login-title">
+        <h1 id="login-title">Iniciar sesión</h1>
+
+        <form class="form" action="#" method="post" novalidate>
+          <label class="label"
+            >ID del usuario
+            <input type="text" name="user" autocomplete="username" />
+          </label>
+
+          <label class="label"
+            >ID del usuario
+            <input
+              type="password"
+              name="pass"
+              autocomplete="current-password"
+            />
+          </label>
+
+          <div class="forgot"><a href="#">¿Olvidaste tu contraseña?</a></div>
+
+          <button class="primary" type="submit">Iniciar sesión</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
