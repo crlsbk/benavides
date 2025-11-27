@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Paciente - Historial Médico</title>
+    <title>Paciente - Inicio</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
@@ -11,7 +11,7 @@
       <div class="topbar-inner">
         <div class="top-left">
           <img
-            src="/assets/imgs/logo.png"
+            src="/assets/imgs/logoBlanco.png"
             alt="Farmacias Benavides"
             class="logo-img"
           />
@@ -57,47 +57,59 @@
       <aside class="sidebar" aria-label="Navegación">
         <nav>
           <ul class="nav">
-            <li class="nav-item">
-              <img
-                src="/assets/icons/house.svg"
-                class="icon-img"
-                alt="Inicio"
-              /><span>Inicio</span>
-            </li>
             <li class="nav-item active">
-              <img
-                src="/assets/icons/historial.svg"
-                class="icon-img"
-                alt="Historial"
-              /><span>Historial Clínico</span>
+              <a href="/paciente/index.html">
+                <img
+                  src="/assets/icons/house.svg"
+                  class="icon-img"
+                  alt="Inicio"
+                /><span>Inicio</span>
+              </a>
             </li>
             <li class="nav-item">
-              <img
-                src="/assets/icons/recetas.svg"
-                class="icon-img"
-                alt="Recetas"
-              /><span>Recetas Médicas</span>
+              <a href="/paciente/historial-medico.html">
+                <img
+                  src="/assets/icons/historial.svg"
+                  class="icon-img"
+                  alt="Historial"
+                /><span>Mi Historial Clínico</span>
+              </a>
             </li>
             <li class="nav-item">
-              <img
-                src="/assets/icons/consultas.svg"
-                class="icon-img"
-                alt="Consultas"
-              /><span>Consultas Médicas</span>
+              <a href="#">
+                <img
+                  src="/assets/icons/recetas.svg"
+                  class="icon-img"
+                  alt="Recetas"
+                /><span>Mis Recetas</span>
+              </a>
             </li>
             <li class="nav-item">
-              <img
-                src="/assets/icons/estudios.svg"
-                class="icon-img"
-                alt="Estudios"
-              /><span>Estudios y Resultados</span>
+              <a href="#">
+                <img
+                  src="/assets/icons/consultas.svg"
+                  class="icon-img"
+                  alt="Consultas"
+                /><span>Consultas Médicas</span>
+              </a>
             </li>
             <li class="nav-item">
-              <img
-                src="/assets/icons/control-citas.svg"
-                class="icon-img"
-                alt="Citas"
-              /><span>Control de Citas</span>
+              <a href="#">
+                <img
+                  src="/assets/icons/estudios.svg"
+                  class="icon-img"
+                  alt="Estudios"
+                /><span>Resultados de Estudios</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <img
+                  src="/assets/icons/control-citas.svg"
+                  class="icon-img"
+                  alt="Citas"
+                /><span>Mis Citas</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -105,141 +117,86 @@
 
       <main class="content" role="main">
         <div class="content-inner">
-          <h1 class="page-title">Historial Médico</h1>
+          <h1 class="page-title">Bienvenido, Juan Pérez</h1>
 
-          <div class="search-bar">
-            <input
-              type="text"
-              placeholder="Buscar antecedentes..."
-              class="search-input"
-            />
-            <button class="search-btn">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+          <div class="dashboard-grid">
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <img src="/assets/icons/control-citas.svg" alt="Mis Citas" />
+              </div>
+              <h2 class="card-title">Mis Citas</h2>
+              <p class="card-description">
+                Consulta tus citas programadas y solicita nuevas citas médicas
+              </p>
+              <a href="#" class="card-link">Ver Mis Citas →</a>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <img
+                  src="/assets/icons/historial.svg"
+                  alt="Mi Historial Clínico"
                 />
-              </svg>
-            </button>
-          </div>
+              </div>
+              <h2 class="card-title">Mi Historial Clínico</h2>
+              <p class="card-description">
+                Revisa tu historial médico y antecedentes de salud
+              </p>
+              <a href="#" class="card-link">Ver Historial →</a>
+            </div>
 
-          <div class="antecedentes-list">
-            <article class="antecedente-card">
-              <h2 class="antecedente-title">Antecedente 1</h2>
-              <div class="antecedente-section">
-                <h3 class="section-label">Enfermedades Crónicas:</h3>
-                <p class="section-text">
-                  Enfermedad 1, enfermedad 2, enfermedad 3...
-                </p>
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <img src="/assets/icons/recetas.svg" alt="Mis Recetas" />
               </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Alergias:</h3>
-                <p class="section-text">
-                  Alergia 1, alergia 2, alergia 3, alergia 4...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Cirugías Previas:</h3>
-                <p class="section-text">Cirugía 1, cirugía 2, cirugía 3...</p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Medicamentos Actuales:</h3>
-                <p class="section-text">
-                  Medicamento 1, medicamento 2, medicamento 3, medicamento 4...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">
-                  Antecedentes Familiares Relevantes:
-                </h3>
-                <p class="section-text">
-                  Antecedente familiar 1, antecedente familiar 2, antecedente
-                  familiar 3...
-                </p>
-              </div>
-              <button class="ver-completo-btn">Ver Antecedente Completo</button>
-            </article>
+              <h2 class="card-title">Mis Recetas</h2>
+              <p class="card-description">
+                Accede a tus recetas médicas y prescripciones activas
+              </p>
+              <a href="#" class="card-link">Ver Recetas →</a>
+            </div>
 
-            <article class="antecedente-card">
-              <h2 class="antecedente-title">Antecedente 2</h2>
-              <div class="antecedente-section">
-                <h3 class="section-label">Enfermedades Crónicas:</h3>
-                <p class="section-text">
-                  Enfermedad 1, enfermedad 2, enfermedad 3...
-                </p>
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <img
+                  src="/assets/icons/estudios.svg"
+                  alt="Resultados de Estudios"
+                />
               </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Alergias:</h3>
-                <p class="section-text">
-                  Alergia 1, alergia 2, alergia 3, alergia 4...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Cirugías Previas:</h3>
-                <p class="section-text">Cirugía 1, cirugía 2, cirugía 3...</p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Medicamentos Actuales:</h3>
-                <p class="section-text">
-                  Medicamento 1, medicamento 2, medicamento 3, medicamento 4...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">
-                  Antecedentes Familiares Relevantes:
-                </h3>
-                <p class="section-text">
-                  Antecedente familiar 1, antecedente familiar 2, antecedente
-                  familiar 3...
-                </p>
-              </div>
-              <button class="ver-completo-btn">Ver Antecedente Completo</button>
-            </article>
+              <h2 class="card-title">Resultados de Estudios</h2>
+              <p class="card-description">
+                Consulta los resultados de tus estudios y análisis clínicos
+              </p>
+              <a href="#" class="card-link">Ver Resultados →</a>
+            </div>
 
-            <article class="antecedente-card">
-              <h2 class="antecedente-title">Antecedente 3</h2>
-              <div class="antecedente-section">
-                <h3 class="section-label">Enfermedades Crónicas:</h3>
-                <p class="section-text">
-                  Enfermedad 1, enfermedad 2, enfermedad 3...
-                </p>
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <img
+                  src="/assets/icons/consultas.svg"
+                  alt="Consultas Médicas"
+                />
               </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Alergias:</h3>
-                <p class="section-text">
-                  Alergia 1, alergia 2, alergia 3, alergia 4...
-                </p>
+              <h2 class="card-title">Consultas Médicas</h2>
+              <p class="card-description">
+                Revisa el historial de tus consultas y tratamientos previos
+              </p>
+              <a href="#" class="card-link">Ver Consultas →</a>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <img
+                  src="/assets/icons/editar-pacientes.svg"
+                  alt="Mi Información"
+                />
               </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Cirugías Previas:</h3>
-                <p class="section-text">Cirugía 1, cirugía 2, cirugía 3...</p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Medicamentos Actuales:</h3>
-                <p class="section-text">
-                  Medicamento 1, medicamento 2, medicamento 3, medicamento 4...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">
-                  Antecedentes Familiares Relevantes:
-                </h3>
-                <p class="section-text">
-                  Antecedente familiar 1, antecedente familiar 2, antecedente
-                  familiar 3...
-                </p>
-              </div>
-              <button class="ver-completo-btn">Ver Antecedente Completo</button>
-            </article>
+              <h2 class="card-title">Mi Información</h2>
+              <p class="card-description">
+                Actualiza tus datos personales y de contacto
+              </p>
+              <a href="#" class="card-link">Editar Información →</a>
+            </div>
           </div>
         </div>
       </main>
