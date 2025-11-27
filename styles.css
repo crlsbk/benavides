@@ -591,6 +591,9 @@ body {
 }
 
 .ver-completo-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 48px;
   border-radius: 24px;
@@ -602,6 +605,7 @@ body {
   font-weight: 700;
   cursor: pointer;
   transition: opacity 0.2s;
+  text-decoration: none;
 }
 
 .ver-completo-btn:hover {

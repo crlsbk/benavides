@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Paciente - Historial Médico</title>
+    <title>Paciente - Ver Antecedente Completo</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
@@ -117,15 +117,8 @@
 
       <main class="content" role="main">
         <div class="content-inner">
-          <h1 class="page-title">Historial Médico</h1>
-
-          <div class="search-bar">
-            <input
-              type="text"
-              placeholder="Buscar antecedentes..."
-              class="search-input"
-            />
-            <button class="search-btn">
+          <div class="page-header-with-back">
+            <button class="btn-back" onclick="window.history.back()">
               <svg
                 width="24"
                 height="24"
@@ -134,130 +127,73 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
-                  stroke="white"
+                  d="M15 18L9 12L15 6"
+                  stroke="currentColor"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
               </svg>
             </button>
+            <h1 class="page-title" style="margin: 0">
+              Ver Antecedente Completo
+            </h1>
           </div>
 
-          <div class="antecedentes-list">
-            <article class="antecedente-card">
-              <h2 class="antecedente-title">Antecedente 1</h2>
-              <div class="antecedente-section">
-                <h3 class="section-label">Enfermedades Crónicas:</h3>
-                <p class="section-text">
-                  Enfermedad 1, enfermedad 2, enfermedad 3...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Alergias:</h3>
-                <p class="section-text">
-                  Alergia 1, alergia 2, alergia 3, alergia 4...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Cirugías Previas:</h3>
-                <p class="section-text">Cirugía 1, cirugía 2, cirugía 3...</p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Medicamentos Actuales:</h3>
-                <p class="section-text">
-                  Medicamento 1, medicamento 2, medicamento 3, medicamento 4...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">
-                  Antecedentes Familiares Relevantes:
-                </h3>
-                <p class="section-text">
-                  Antecedente familiar 1, antecedente familiar 2, antecedente
-                  familiar 3...
-                </p>
-              </div>
-              <a href="/paciente/ver-antecedente.html" class="ver-completo-btn"
-                >Ver Antecedente Completo</a
-              >
-            </article>
+          <div class="antecedente-completo">
+            <section class="antecedente-section">
+              <h2 class="antecedente-section-title">Antecedente 1</h2>
 
-            <article class="antecedente-card">
-              <h2 class="antecedente-title">Antecedente 2</h2>
-              <div class="antecedente-section">
-                <h3 class="section-label">Enfermedades Crónicas:</h3>
-                <p class="section-text">
+              <div class="antecedente-field">
+                <h3 class="antecedente-field-label">Enfermedades Crónicas:</h3>
+                <p class="antecedente-field-text">
                   Enfermedad 1, enfermedad 2, enfermedad 3...
                 </p>
               </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Alergias:</h3>
-                <p class="section-text">
-                  Alergia 1, alergia 2, alergia 3, alergia 4...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Cirugías Previas:</h3>
-                <p class="section-text">Cirugía 1, cirugía 2, cirugía 3...</p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Medicamentos Actuales:</h3>
-                <p class="section-text">
-                  Medicamento 1, medicamento 2, medicamento 3, medicamento 4...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">
-                  Antecedentes Familiares Relevantes:
-                </h3>
-                <p class="section-text">
-                  Antecedente familiar 1, antecedente familiar 2, antecedente
-                  familiar 3...
-                </p>
-              </div>
-              <a href="/paciente/ver-antecedente.html" class="ver-completo-btn"
-                >Ver Antecedente Completo</a
-              >
-            </article>
 
-            <article class="antecedente-card">
-              <h2 class="antecedente-title">Antecedente 3</h2>
-              <div class="antecedente-section">
-                <h3 class="section-label">Enfermedades Crónicas:</h3>
-                <p class="section-text">
-                  Enfermedad 1, enfermedad 2, enfermedad 3...
-                </p>
-              </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Alergias:</h3>
-                <p class="section-text">
+              <div class="antecedente-field">
+                <h3 class="antecedente-field-label">Alergias:</h3>
+                <p class="antecedente-field-text">
                   Alergia 1, alergia 2, alergia 3, alergia 4...
                 </p>
               </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Cirugías Previas:</h3>
-                <p class="section-text">Cirugía 1, cirugía 2, cirugía 3...</p>
+
+              <div class="antecedente-field">
+                <h3 class="antecedente-field-label">Cirugías Previas:</h3>
+                <p class="antecedente-field-text">
+                  Cirugía 1, cirugía 2, cirugía 3...
+                </p>
               </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">Medicamentos Actuales:</h3>
-                <p class="section-text">
+
+              <div class="antecedente-field">
+                <h3 class="antecedente-field-label">Medicamentos Actuales:</h3>
+                <p class="antecedente-field-text">
                   Medicamento 1, medicamento 2, medicamento 3, medicamento 4...
                 </p>
               </div>
-              <div class="antecedente-section">
-                <h3 class="section-label">
+
+              <div class="antecedente-field">
+                <h3 class="antecedente-field-label">
                   Antecedentes Familiares Relevantes:
                 </h3>
-                <p class="section-text">
+                <p class="antecedente-field-text">
                   Antecedente familiar 1, antecedente familiar 2, antecedente
                   familiar 3...
                 </p>
               </div>
-              <a href="/paciente/ver-antecedente.html" class="ver-completo-btn"
-                >Ver Antecedente Completo</a
-              >
-            </article>
+
+              <div class="antecedente-field">
+                <h3 class="antecedente-field-label">
+                  Anotaciones Adicionales:
+                </h3>
+                <p class="antecedente-field-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris.
+                </p>
+              </div>
+            </section>
           </div>
         </div>
       </main>
